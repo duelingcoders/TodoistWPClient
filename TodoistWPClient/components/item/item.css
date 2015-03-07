@@ -1,0 +1,15 @@
+﻿.item-list {
+}
+
+    .item-list .item {
+        border-bottom: 1px solid #eee;
+    }
+
+        .item-list .item:last-of-type {
+            border-bottom: 0;
+        }
+
+        .item-list .item a {
+            display: block;
+            padding: 10px 0;
+        }

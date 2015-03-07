@@ -4,13 +4,13 @@
   <Identity
     Name="980059ed-5a2f-45ff-a0f6-efae568d625d"
     Version="1.0.0.0"
-    Publisher="CN=v-wosong" />
+    Publisher="CN=WonSong" />
 
   <mp:PhoneIdentity PhoneProductId="980059ed-5a2f-45ff-a0f6-efae568d625d" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>TodoistWPClient</DisplayName>
-    <PublisherDisplayName>v-wosong</PublisherDisplayName>
+    <PublisherDisplayName>Won Song</PublisherDisplayName>
     <Logo>images\StoreLogo.png</Logo>
   </Properties>
 

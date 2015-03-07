@@ -1,0 +1,18 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1>projects</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <ul class="list-unstyled project-list">
+                <li ng-repeat="project in projects | orderBy:'item_order'" class="project">
+                    <a indenter="{{project.indent}}" ui-sref="project-view({projectId: project.id, projectName: project.name})">
+                        {{project.name}}
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

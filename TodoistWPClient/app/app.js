@@ -29,4 +29,13 @@
     };
 
     app.start();
+
+    angular.module('todoist', [
+        'ui.router'
+    ]).config(function ($urlRouterProvider) {
+
+        $urlRouterProvider.otherwise('/');
+
+    });
+
 })();
