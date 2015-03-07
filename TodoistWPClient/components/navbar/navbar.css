@@ -1,0 +1,12 @@
+﻿.navbar {
+}
+
+    .navbar .nav.navbar-nav.navbar-right {
+    }
+
+        .navbar .nav.navbar-nav.navbar-right hr {
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left: 15px;
+            margin-right: 15px;
+        }

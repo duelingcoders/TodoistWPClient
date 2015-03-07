@@ -1,0 +1,53 @@
+﻿<div class="navbar navbar-default navbar-todoist navbar-fixed-top" ng-controller="NavbarCtrl">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-menu">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" ui-sref="main">TD</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="app-menu">
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a ui-serf="inbox">
+                        <i class="fa fa-inbox"></i>
+                        Inbox
+                    </a>
+                </li>
+                <li>
+                    <a ui-serf="inbox">
+                        <i class="fa fa-calendar-o"></i>
+                        Today
+                    </a>
+                </li>
+                <li>
+                    <a ui-serf="week">
+                        <i class="fa fa-calendar"></i>
+                        Week
+                    </a>
+                </li>
+                <li><hr /></li>
+                <li>
+                    <a ui-sref="project">Projects</a>
+                </li>
+                <li>
+                    <a ui-serf="projects">Labels</a>
+                </li>
+                <li><a ui-serf="projects">Filters</a></li>
+                <li><hr /></li>
+                <li>
+                    <a>Settings</a>
+                </li>
+                <li>
+                    <a ng-click="logoff()">Log Off</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

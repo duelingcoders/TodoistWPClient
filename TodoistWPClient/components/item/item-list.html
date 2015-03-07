@@ -1,0 +1,13 @@
+﻿<div class="row">
+    <div class="col-xs-12">
+        <ul class="list-unstyled item-list">
+            <li ng-repeat="item in items" class="item">
+                <a>
+                    <i class="fa fa-check-square-o" ng-if="item.checked == 1"></i>
+                    <i class="fa fa-square-o" ng-if="item.checked == 0"></i>
+                    {{item.content}}
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

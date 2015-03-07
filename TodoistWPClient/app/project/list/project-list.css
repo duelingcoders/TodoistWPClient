@@ -1,0 +1,15 @@
+﻿.project-list {
+}
+
+    .project-list .project {
+        border-bottom: 1px solid #eee;
+    }
+
+        .project-list .project:last-of-type {
+            border-bottom: 0;
+        }
+
+        .project-list .project a {
+            display: block;
+            padding: 10px 0;
+        }
