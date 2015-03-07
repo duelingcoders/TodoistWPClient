@@ -33,9 +33,10 @@
     angular.module('todoist', [
         'ui.router',
         'angular-loading-bar'
-    ]).config(function ($urlRouterProvider) {
+    ]).config(function ($urlRouterProvider, cfpLoadingBarProvider) {
 
         $urlRouterProvider.otherwise('/');
+        cfpLoadingBarProvider.includeSpinner = false;
 
     });
 

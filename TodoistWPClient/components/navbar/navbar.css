@@ -3,13 +3,17 @@
     color: #737373;
 }
 
+    .navbar .home-link {
+        margin-left: 15px;
+    }
+
     .navbar .nav.navbar-nav.navbar-right {
     }
 
-    .navbar .nav.navbar-nav.navbar-right li {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
+        .navbar .nav.navbar-nav.navbar-right li {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
 
         .navbar .nav.navbar-nav.navbar-right hr {
             margin-top: 5px;
