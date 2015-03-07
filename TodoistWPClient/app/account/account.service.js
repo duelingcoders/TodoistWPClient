@@ -27,15 +27,21 @@
         return Storage.get('authToken');
     }
 
+    function getUser() {
+        return Storage.get('user');
+    }
+
     function logoff() {
         Storage.remove('user');
+        Storage.remove('authToken');
     }
 
     return {
         isAuthenticated: isAuthenticated,
         login: login,
         logoff: logoff,
-        getAuthToken: getAuthToken
+        getAuthToken: getAuthToken,
+        getUser: getUser
     }
     
 });

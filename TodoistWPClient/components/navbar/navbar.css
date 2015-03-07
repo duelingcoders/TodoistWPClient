@@ -21,3 +21,25 @@
             margin-left: 15px;
             margin-right: 15px;
         }
+
+    .navbar .navbar-user-info {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+        .navbar .navbar-user-info img {
+            display: block;
+            border-radius: 50%;
+            display: inline-block;
+            width: 100px;
+            height: auto;
+        }
+
+        .navbar .navbar-user-info .user-name {
+            margin-top: 10px;
+        }
+
+        .navbar .navbar-user-info .user-menu {
+            
+        }

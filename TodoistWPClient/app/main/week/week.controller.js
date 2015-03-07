@@ -17,7 +17,6 @@
 
         Query.query(queries)
             .success(function (queryData) {
-            console.log(queryData);
                 $scope.days = queryData;
             });
 

@@ -1,4 +1,4 @@
-﻿<div class="navbar navbar-default navbar-todoist navbar-fixed-top" ng-controller="NavbarCtrl">
+﻿<div class="navbar navbar-default navbar-todoist navbar-fixed-bottom" ng-controller="NavbarCtrl">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -9,13 +9,20 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="home-link" ui-sref="main">
-                <img src="/images/todoist.png" />
+                <img src="/images/todoist.png"/>
             </a>
         </div>
 
         <div class="collapse navbar-collapse" id="app-menu">
 
             <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a ui-serf="inbox">
+                        <i class="fa fa-plus"></i>
+                        New Task
+                    </a>
+                </li>
+                <li><hr/></li>
                 <li>
                     <a ui-serf="inbox">
                         <i class="fa fa-inbox"></i>
@@ -34,7 +41,7 @@
                         Next 7 Days
                     </a>
                 </li>
-                <li><hr /></li>
+                <li><hr/></li>
                 <li>
                     <a ui-sref="project">Projects</a>
                 </li>
@@ -42,14 +49,29 @@
                     <a ui-serf="projects">Labels</a>
                 </li>
                 <li><a ui-serf="projects">Filters</a></li>
-                <li><hr /></li>
-                <li>
-                    <a>Settings</a>
-                </li>
-                <li>
-                    <a ng-click="logoff()">Log Off</a>
-                </li>
+                <li><hr/></li>
             </ul>
+            <div class="navbar-user-info">
+                <img src="{{user.avatar_big}}"/>
+                <p class="user-name">
+                    {{user.full_name}}
+                </p>
+
+                <ul class="list-inline user-menu">
+                    <li>
+                        <a>
+                            <i class="fa fa-gear"></i>
+                            Settings
+                        </a>
+                    </li>
+                    <li>
+                        <a ng-click="logoff()">
+                            <i class="fa fa-unlock-alt"></i>
+                            Log Off
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>

@@ -20,6 +20,7 @@
                 $scope.flags.loginError = true;
                 return;
             }
+
             $state.go('main');
 
         }).error(function (data, stats) {
