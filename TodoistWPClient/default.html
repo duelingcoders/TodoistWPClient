@@ -5,11 +5,12 @@
     <title>TodoistWPClient</title>
 
     <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="/vendor/loading-bar/loading-bar.min.css" rel="stylesheet" />
     <link href="/app/app.css" rel="stylesheet"/> 
     <link href="/app/project/list/project-list.css" rel="stylesheet" />
     <link href="/components/navbar/navbar.css" rel="stylesheet"/>
-    <link href="/components/item/item.css" rel="stylesheet" />
+    <link href="/components/item/item.css" rel="stylesheet"/>
 
     <script src="//Microsoft.Phone.WinJS.2.1/js/base.js"></script>
     <script src="/vendor/winstore-jscompat/winstore-jscompat.js"></script>
@@ -17,6 +18,7 @@
     <script src="/vendor/angular/angular.min.js"></script>
     <script src="/vendor/angular/angular-ui-router.min.js"></script>
     <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/vendor/loading-bar/loading-bar.min.js"></script>
     <script src="app/app.js"></script>
     <script src="app/main/main.js"></script>
     <script src="app/main/main.controller.js"></script>
@@ -33,6 +35,8 @@
     <script src="components/item/item-list.directive.js"></script>
     <script src="components/item/item.directive.js"></script>
     <script src="components/indenter/indenter.directive.js"></script>
+    <script src="components/color-selector/color-selector.directive.js"></script>
+    <script src="components/query/query.service.js"></script>
 </head>
 <body ng-app="todoist">
     <div ng-include="'components/navbar/navbar.html'"></div>
