@@ -4,10 +4,9 @@
         function initialize() {
 
             $scope.user = Account.getUser();
-            console.log($scope.user);
 
             angular.element('#app-menu a, .home-link')
-            .on('click', function() {
+            .on('click', function () {
                 $("#app-menu").collapse('hide');
             });
 
@@ -18,8 +17,13 @@
             $state.go('login');
         }
 
+        function isActive(state_name) {
+            return $state.current.name === state_name;
+        }
+
         initialize();
 
         $scope.logoff = logoff;
+        $scope.isActive = isActive;
 
     });

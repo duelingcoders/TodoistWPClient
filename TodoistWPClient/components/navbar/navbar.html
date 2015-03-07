@@ -26,29 +26,29 @@
                 <li>
                     <a ui-serf="inbox">
                         <i class="fa fa-inbox"></i>
-                        Inbox
+                        Inbox (Coming soon)
                     </a>
                 </li>
                 <li>
-                    <a ui-sref="today">
+                    <a ui-sref="today" ng-class="{'active': isActive('today')}">
                         <i class="fa fa-calendar-o"></i>
                         Today
                     </a>
                 </li>
                 <li>
-                    <a ui-sref="week">
+                    <a ui-sref="week" ng-class="{'active': isActive('week')}">
                         <i class="fa fa-calendar"></i>
                         Next 7 Days
                     </a>
                 </li>
                 <li><hr/></li>
                 <li>
-                    <a ui-sref="project">Projects</a>
+                    <a ui-sref="project" ng-class="{'active': isActive('project')}">Projects</a>
                 </li>
                 <li>
-                    <a ui-serf="projects">Labels</a>
+                    <a ui-serf="projects">Labels (Coming soon)</a>
                 </li>
-                <li><a ui-serf="projects">Filters</a></li>
+                <li><a ui-serf="projects">Filters (Coming soon)</a></li>
                 <li><hr/></li>
             </ul>
             <div class="navbar-user-info">
@@ -61,7 +61,7 @@
                     <li>
                         <a>
                             <i class="fa fa-gear"></i>
-                            Settings
+                            Settings (Coming soon)
                         </a>
                     </li>
                     <li>
