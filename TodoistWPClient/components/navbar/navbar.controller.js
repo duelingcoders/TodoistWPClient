@@ -5,7 +5,7 @@
 
             $scope.user = Account.getUser();
 
-            angular.element('#app-menu a, .home-link')
+            angular.element('#app-menu a:not(.coming-soon), .home-link')
             .on('click', function () {
                 $("#app-menu").collapse('hide');
             });

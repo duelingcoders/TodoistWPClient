@@ -22,9 +22,17 @@
             margin-right: 15px;
         }
 
+    .navbar #app-menu a:hover, .navbar #app-menu a:active {
+        color: inherit;
+    }
+
     .navbar #app-menu a.active {
         color: #1a1a1a;
         font-weight: 700;
+    }
+
+    .navbar #app-menu a.coming-soon {
+        color: #aaa;
     }
 
     .navbar .navbar-user-info {
