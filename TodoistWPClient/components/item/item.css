@@ -13,3 +13,7 @@
             display: block;
             padding: 10px 0;
         }
+
+            .item-list .item a.completed {
+                color: #eee
+            }

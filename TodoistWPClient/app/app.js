@@ -32,7 +32,7 @@
 
     angular.module('todoist', [
         'ui.router'
-    ]).config(function ($urlRouterProvider) {
+    ]).config(function($urlRouterProvider) {
 
         $urlRouterProvider.otherwise('/');
 

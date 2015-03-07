@@ -1,0 +1,5 @@
+﻿<a item="item" ng-click="toggleComplete(ngModel.id)" ng-class="{'completed': ngModel.checked == 1}">
+    <i class="fa fa-check-square-o" ng-if="ngModel.checked == 1"></i>
+    <i class="fa fa-square-o" ng-if="ngModel.checked == 0"></i>
+    {{ngModel.content}}
+</a>

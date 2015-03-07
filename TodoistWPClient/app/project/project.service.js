@@ -2,13 +2,18 @@
     .factory('Project', function ($http, Account) {
         
         function getAllProjects() {
+
             return $http({
                 method: 'get',
                 url: 'http://todoist.com/API/getProjects',
                 params: {
-                    token: Account.getAuthToken()
+                    token: Account.getAuthToken(),
+                    preventCache: new Date().getTime()
                 }
+            }).error(function(response) {
+                console.log(response);
             });
+
         }
 
         function getProject(projectId) {
@@ -17,7 +22,8 @@
                 url: 'http://todoist.com/API/getProject',
                 params: {
                     token: Account.getAuthToken(),
-                    project_id: projectId
+                    project_id: projectId,
+                    preventCache: new Date().getTime()
                 }
             });
         }
