@@ -61,8 +61,8 @@
     <Content Include="app\main\main.js" />
     <Content Include="app\main\today\today.controller.js" />
     <Content Include="app\main\today\today.html" />
-    <Content Include="app\main\week\main.controller.js" />
-    <Content Include="app\main\week\main.html" />
+    <Content Include="app\main\week\week.controller.js" />
+    <Content Include="app\main\week\week.html" />
     <Content Include="app\project\list\project-list.controller.js" />
     <Content Include="app\project\list\project-list.css" />
     <Content Include="app\project\list\project-list.html" />

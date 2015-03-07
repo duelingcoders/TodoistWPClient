@@ -1,0 +1,15 @@
+﻿<div class="container">
+
+    <div ng-repeat="day in days">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1 ng-if="$index == 0">Today <small>{{day.query | date: 'MMM d'}}</small></h1>
+                <h2 ng-if="$index == 1">Tomorrow <small>{{day.query | date: 'MMM d'}}</small></h2>
+                <h2 ng-if="$index > 1">{{day.query | date: 'EEEE'}} <small>{{day.query | date: 'MMM d'}}</small></h2>
+            </div>
+        </div>
+        <item-list ng-model="day.data"></item-list>
+
+    </div>
+
+</div>

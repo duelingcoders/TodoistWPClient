@@ -1,19 +1,12 @@
 ﻿angular.module('todoist')
-    .directive('itemList', function (Item) {
+    .directive('itemList', function (Item, Query) {
         return {
             restrict: 'E',
             scope: {
-                type: '=',
-                ngModel: '='
+                ngModel: '=',
+                hasIndent: '='
             },
-            link: function (scope, element, attr) {
-
-                Item.getItemsInProject(scope.ngModel)
-                    .success(function (response) {
-                        scope.items = response;
-                    });
-
-            },
+            link: function(scope, element, attr) {},
             templateUrl: 'components/item/item-list.html'
         }
     });

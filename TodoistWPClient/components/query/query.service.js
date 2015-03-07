@@ -5,11 +5,13 @@
             return $http({
                 url: 'http://todoist.com/API/query',
                 params: {
-                    queries: queries,
+                    queries: JSON.stringify(queries),
                     preventCache: new Date().getTime(),
                     token: Account.getAuthToken()
                 },
                 method: 'get'
+            }).error(function (response) {
+                console.log(response);
             });
         }
 
