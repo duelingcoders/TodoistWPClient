@@ -1,0 +1,14 @@
+﻿select::-ms-expand {
+    width: 12px;
+    border: none;
+    background: #fff;
+}
+
+.dropdown-menu .btn-sm {
+    padding: 7px 17px !important;
+    font-size: 14px;
+}
+
+.submitted .ng-invalid {
+    border: 1px solid red;
+}

@@ -7,14 +7,7 @@
             $state.go('login');
         }
 
-        var queries = [];
-        for (var i = 0; i < 7; i++) {
-            var today = new Date();
-            var daysAfter = new Date(today);
-            daysAfter.setDate(today.getDate() + i);
-            queries.push(daysAfter.toISOString());
-        }
-
+        var queries = ['today', '+1', '+2', '+3', '+4', '+5', '+6'];
         Query.query(queries)
             .success(function (queryData) {
                 $scope.days = queryData;
@@ -22,6 +15,17 @@
 
     }
 
+    function getDate(offset) {
+
+        var today = new Date();
+        var newDate = new Date(today);
+        newDate.setDate(today.getDate() + offset);
+
+        return newDate;
+    }
+
     initialize();
+
+    $scope.getDate = getDate;
 
 });

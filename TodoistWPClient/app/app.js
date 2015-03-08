@@ -31,8 +31,11 @@
     app.start();
 
     angular.module('todoist', [
+
         'ui.router',
-        'angular-loading-bar'
+        'angular-loading-bar',
+        'ui.bootstrap'
+
     ]).config(function ($urlRouterProvider, cfpLoadingBarProvider) {
 
         $urlRouterProvider.otherwise('/');

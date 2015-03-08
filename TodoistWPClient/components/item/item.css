@@ -15,5 +15,21 @@
         }
 
             .item-list .item a.completed {
-                color: #999
+                color: #999 !important
+            }
+
+            .item-list .item a.completed i.fa {
+                color: #999 !important
+            }
+
+            .item-list .item a.low i.fa {
+                color: skyblue;
+            }
+
+            .item-list .item a.medium i.fa {
+                color: blue;
+            }
+
+            .item-list .item a.high i.fa {
+                color: red;
             }

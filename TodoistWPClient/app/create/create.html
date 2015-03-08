@@ -1,0 +1,53 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1>Add New Task</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <form name="taskForm" novalidate="" ng-submit="createTask(task)" id="task-form" >
+
+                <div class="form-group form-group-lg">
+                    <label for="content">Content</label>
+                    <input type="text" class="form-control" id="content" name="content"
+                           placeholder="Enter task content" ng-model="task.content" required>
+                </div>
+
+                <div class="form-group form-group-lg">
+                    <label for="date">Due Date</label>
+                    <p class="input-group input-group-lg">
+                        <input type="text" class="form-control" datepicker-popup="mediumDate" ng-model="task.date_string"
+                               datepicker-options="datepickerOptions" is-open="opened" container="body" close-text="Close" />
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+                        </span>
+                    </p>
+                </div>
+
+                <div class="form-group form-group-lg">
+                    <label for="project">Project</label>
+                    <select ng-model="task.project_id" id="project" class="form-control" ng-options="project.id as project.name for project in projects"></select>
+                </div>
+
+                <div class="form-group form-group-lg">
+                    <label for="priority">Priority</label>
+                    <select ng-model="task.priority" id="priority" class="form-control">
+                        <option value="4">High</option>
+                        <option value="3">Medium</option>
+                        <option value="2">Low</option>
+                        <option value="1">Very low</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-default btn-lg">
+                    Add
+                </button>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<div ng-include="'components/navbar/navbar.html'"></div>
