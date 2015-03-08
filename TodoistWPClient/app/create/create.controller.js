@@ -8,9 +8,12 @@
                 $scope.projects = response;
             });
 
+        var user = Account.getUser();
+
         $scope.datepickerOptions = {
             appendToBody: true,
-            showWeeks: false
+            showWeeks: false,
+            startingDay: user.start_day
         };
 
     }

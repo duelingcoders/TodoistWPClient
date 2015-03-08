@@ -12,7 +12,6 @@
             .success(function (queryData) {
 
                 $scope.items = queryData[0].data;
-                console.log($scope.items);
 
             });
 
