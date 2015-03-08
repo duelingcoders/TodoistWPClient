@@ -1,4 +1,4 @@
-/*! 
+﻿/*! 
  * angular-loading-bar v0.7.1
  * https://chieffancypants.github.io/angular-loading-bar
  * Copyright (c) 2015 Wes Cruver

@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
-  <Identity Name="980059ed-5a2f-45ff-a0f6-efae568d625d" Version="1.0.0.0" Publisher="CN=WonSong" />
-  <mp:PhoneIdentity PhoneProductId="980059ed-5a2f-45ff-a0f6-efae568d625d" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Identity Name="56031WonSong.TodoistUnofficial" Version="0.1.0.0" Publisher="CN=2C55B372-33D1-464F-934E-B9FC657F194C" />
+  <mp:PhoneIdentity PhoneProductId="08d9f47d-9e41-4399-bd12-931f23c70c4f" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>TodoistWPClient</DisplayName>
+    <DisplayName>Todoist Unofficial</DisplayName>
     <PublisherDisplayName>Won Song</PublisherDisplayName>
     <Logo>images\StoreLogo.png</Logo>
   </Properties>
