@@ -1,21 +1,17 @@
 ﻿<div class="container">
-    <div ng-repeat="day in days">
-        <div class="row">
-            <div class="col-xs-12">
+    <div ng-repeat="day in days" class="group" ng-if="$index == 0 && day.data.lenght > 0 || $index == 1 && day.data.length > 0 || $index > 1">
 
-                <h2 ng-if="$index == 0 && day.data.lenght > 0" class="overdue">
-                    Overdue
-                </h2>
+        <h2 ng-if="$index == 0 && day.data.lenght > 0" class="overdue">
+            Overdue
+        </h2>
 
-                <h2 ng-if="$index == 1 && day.data.length > 0" class="overdue">
-                    Yesterday <small>{{getDate($index) | date: 'EEE MMM d'}}</small>
-                </h2>
+        <h2 ng-if="$index == 1 && day.data.length > 0" class="overdue">
+            Yesterday <small>{{getDate($index) | date: 'EEE MMM d'}}</small>
+        </h2>
 
-                <h1 ng-if="$index == 2">
-                    Today <small>{{getDate($index) | date: 'EEE MMM d'}}</small>
-                </h1>
-            </div>
-        </div>
+        <h1 ng-if="$index == 2">
+            Today <small>{{getDate($index) | date: 'EEE MMM d'}}</small>
+        </h1>
 
         <item-list ng-model="day.data" show-dates="$index == 0" show-no-task-text="$index == 2"></item-list>
 

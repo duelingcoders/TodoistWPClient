@@ -1,12 +1,12 @@
 ﻿<div class="row">
     <div class="col-xs-12">
-        <ul class="list-unstyled item-list" ng-if="ngModel.length > 0">
+        <p ng-if="ngModel.length == 0 && showNoTaskText" class="info">
+            There are no tasks here.
+        </p>
+        <ul class="list-unstyled item-list">
             <li ng-repeat="item in ngModel" class="item" has-indent="{{hasIndent}}" indenter="{{item.indent}}">
                 <item ng-model="item" show-dates="showDates"></item>
             </li>
         </ul>
-        <p ng-if="ngModel.length == 0 && showNoTaskText" class="info">
-            There are no tasks here.
-        </p>
     </div>
 </div>

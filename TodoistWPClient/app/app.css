@@ -6,7 +6,7 @@
 
 body {
     margin-top: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
 }
 
 a {
@@ -19,7 +19,6 @@ h1 {
     font-family: 'Segoe WP Light';
     font-weight: 300;
     font-size: 2.0em;
-    margin-top: 0;
     margin-bottom: 10px;
 }
 
@@ -27,7 +26,6 @@ h2 {
     font-family: 'Segoe WP Light';
     font-weight: 300;
     font-size: 1.7em;
-    margin-bottom: 10px;
 }
 
 h1 small, h2 small {
@@ -48,4 +46,8 @@ p.info {
 
 .overdue {
     color: #dd4b39;
+}
+
+.group:first-of-type h1, .group:first-of-type h2 {
+    margin-top: 0;
 }

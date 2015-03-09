@@ -1,28 +1,25 @@
 ﻿<div class="container">
 
-    <div ng-repeat="day in days">
-        <div class="row">
-            <div class="col-xs-12">
-                <h2 ng-if="$index == 0 && day.data.lenght > 0" class="overdue">
-                    Overdue
-                </h2>
+    <div ng-repeat="day in days" class="group" ng-if="$index == 0 && day.data.lenght > 0 || $index == 1 && day.data.length > 0  || $index > 1">
+        <h2 ng-if="$index == 0 && day.data.lenght > 0" class="overdue">
+            Overdue
+        </h2>
 
-                <h2 ng-if="$index == 1 && day.data.length > 0" class="overdue">
-                    Yesterday <small>{{getDate($index) | date: 'EEE MMM d'}}</small>
-                </h2>
+        <h2 ng-if="$index == 1 && day.data.length > 0" class="overdue">
+            Yesterday <small>{{getDate($index) | date: 'EEE MMM d'}}</small>
+        </h2>
 
-                <h1 ng-if="$index == 2" ng-class="{'no-task': day.data.length == 0}">
-                    Today <small>{{getDate($index) | date: 'EEE MMM d'}}</small>
-                </h1>
+        <h1 ng-if="$index == 2" ng-class="{'no-task': day.data.length == 0}">
+            Today <small>{{getDate($index) | date: 'EEE MMM d'}}</small>
+        </h1>
 
-                <h2 ng-if="$index == 3" ng-class="{'no-task': day.data.length == 0}">
-                    Tomorrow <small>{{getDate($index) | date: 'EEE MMM d'}}</small>
-                </h2>
-                <h2 ng-if="$index > 3" ng-class="{'no-task': day.data.length == 0}">
-                    {{getDate($index) | date: 'EEEE'}} <small>{{getDate($index) | date: 'EEE MMM d'}}</small>
-                </h2>
-            </div>
-        </div>
+        <h2 ng-if="$index == 3" ng-class="{'no-task': day.data.length == 0}">
+            Tomorrow <small>{{getDate($index) | date: 'EEE MMM d'}}</small>
+        </h2>
+        <h2 ng-if="$index > 3" ng-class="{'no-task': day.data.length == 0}">
+            {{getDate($index) | date: 'EEEE'}} <small>{{getDate($index) | date: 'EEE MMM d'}}</small>
+        </h2>
+
         <item-list ng-model="day.data" show-dates="$index == 0"></item-list>
 
     </div>
