@@ -7,16 +7,27 @@
             $state.go('login');
         }
 
-        var queries = ['today'];
+        var queries = ['overdue', 'yesterday', 'today'];
         Query.query(queries)
             .success(function (queryData) {
 
-                $scope.items = queryData[0].data;
+                $scope.days = queryData;
 
             });
 
     }
 
+    function getDate(offset) {
+
+        var today = new Date();
+        var newDate = new Date(today);
+        newDate.setDate(today.getDate() + (offset - 2));
+
+        return newDate;
+    }
+
     initialize();
+
+    $scope.getDate = getDate;
 
 });

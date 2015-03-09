@@ -7,7 +7,7 @@
             $state.go('login');
         }
 
-        var queries = ['today', '+1', '+2', '+3', '+4', '+5', '+6'];
+        var queries = ['overdue', 'yesterday', 'today', '+1', '+2', '+3', '+4', '+5', '+6'];
         Query.query(queries)
             .success(function (queryData) {
                 $scope.days = queryData;
@@ -19,7 +19,7 @@
 
         var today = new Date();
         var newDate = new Date(today);
-        newDate.setDate(today.getDate() + offset);
+        newDate.setDate(today.getDate() + (offset - 2));
 
         return newDate;
     }

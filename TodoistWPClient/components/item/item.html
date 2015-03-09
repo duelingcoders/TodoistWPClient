@@ -7,4 +7,6 @@
     <i class="fa fa-check-square" ng-if="ngModel.checked == 1"></i>
     <i class="fa fa-square" ng-if="ngModel.checked == 0"></i>
     {{ngModel.content}}
+
+    <span class="pull-right date" ng-if="showDates">{{ngModel.date_string}}</span>
 </a>

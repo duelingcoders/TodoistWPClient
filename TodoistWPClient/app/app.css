@@ -41,3 +41,11 @@ h1 small, h2 small {
 p.info {
     color: #999;
 }
+
+.no-task {
+    color: #999;
+}
+
+.overdue {
+    color: #dd4b39;
+}

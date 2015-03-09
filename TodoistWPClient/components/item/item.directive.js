@@ -3,7 +3,8 @@
         return {
             restrict: 'E',
             scope: {
-                ngModel: '='
+                ngModel: '=',
+                showDates: '='
             },
             link: function (scope, element, attr) {
 

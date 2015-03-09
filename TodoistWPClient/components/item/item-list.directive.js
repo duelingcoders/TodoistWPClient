@@ -4,7 +4,9 @@
             restrict: 'E',
             scope: {
                 ngModel: '=',
-                hasIndent: '='
+                hasIndent: '=',
+                showDates: '=',
+                showNoTaskText: '='
             },
             link: function(scope, element, attr) {},
             templateUrl: 'components/item/item-list.html'
