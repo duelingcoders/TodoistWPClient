@@ -20,7 +20,7 @@
             {{getDate($index) | date: 'EEEE'}} <small>{{getDate($index) | date: 'EEE MMM d'}}</small>
         </h2>
 
-        <item-list ng-model="day.data" show-dates="$index == 0"></item-list>
+        <item-list ng-model="day.data" show-dates="$index == 0" show-project="true"></item-list>
 
     </div>
 

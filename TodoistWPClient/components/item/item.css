@@ -1,7 +1,7 @@
 ﻿.item-list {
 }
 
-    
+
 
     .item-list .item {
         border-bottom: 1px solid #eee;
@@ -17,26 +17,47 @@
         }
 
             .item-list .item a.completed {
-                color: #999 !important
+                color: #999 !important;
             }
 
-            .item-list .item a.completed i.fa {
-                color: #999 !important
-            }
+                .item-list .item a.completed i.fa-check-square, .item-list .item a.completed i.fa-square {
+                    color: #999 !important;
+                }
 
-            .item-list .item a.low i.fa {
+            .item-list .item a.low i.fa-check-square, .item-list .item a.low i.fa-square {
                 color: #76c6ff;
             }
 
-            .item-list .item a.medium i.fa {
+            .item-list .item a.medium i.fa-check-square, .item-list .item a.medium i.fa-square {
                 color: ##0063a6;
             }
 
-            .item-list .item a.high i.fa {
+            .item-list .item a.high i.fa-check-square, .item-list .item a.high i.fa-square {
                 color: #dd4b39;
             }
 
-         .item-list .item .date {
-             font-size: 0.75em;
-             color: #999;
-         }
+        .item-list .item .item-checkbox {
+            display: inline-block;
+            vertical-align: middle;
+            width: 25px;
+            padding-top: 5px;
+        }
+
+        .item-list .item .content {
+            display: inline-block;
+            vertical-align: middle;
+            width: 85%;
+        }
+
+        .item-list .item .meta {
+            margin-left: 30px;
+        }
+
+        .item-list .item .date {
+            font-size: 0.75em;
+            color: #999;
+        }
+
+        .item-list .item .project {
+            font-size: 0.75em;
+        }

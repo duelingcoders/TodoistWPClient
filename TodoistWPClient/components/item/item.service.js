@@ -1,17 +1,22 @@
 ﻿angular.module('todoist')
-    .factory('Item', function ($http, Account) {
+    .factory('Item', function ($http, Account, Storage) {
 
         function getItemsInProject(projectId) {
 
-            return $http({
-                method: 'get',
-                url: 'http://todoist.com/API/getUncompletedItems',
-                params: {
-                    token: Account.getAuthToken(),
-                    project_id: projectId,
-                    preventCache: new Date().getTime()
-                }
+            var allItems = Storage.get('Items');
+            return _.filter(allItems, function(item) {
+                return item.project_id === Number(projectId);
             });
+
+            //return $http({
+            //    method: 'get',
+            //    url: 'http://todoist.com/API/getUncompletedItems',
+            //    params: {
+            //        token: Account.getAuthToken(),
+            //        project_id: projectId,
+            //        preventCache: new Date().getTime()
+            //    }
+            //});
 
         }
 

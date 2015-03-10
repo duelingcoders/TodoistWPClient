@@ -7,9 +7,10 @@
     <div class="row">
         <div class="col-xs-12">
             <ul class="list-unstyled project-list">
-                <li ng-repeat="project in projects | orderBy:'item_order'" class="project" has-indent="true" indenter="{{project.indent}}" ng-if="project.is_deleted == 0 && project.is_archived == 0">
+                <li ng-repeat="project in projects | orderBy:'item_order'" class="project" has-indent="true" indenter="{{project.indent}}"
+                    ng-if="project.is_deleted == 0 && project.is_archived == 0">
                     <a ui-sref="project-view({projectId: project.id, projectName: project.name})">
-                        <i class="fa fa-circle" color-selector="{{project.color}}"></i> {{project.name}}
+                        <project-item ng-model="project" show-item-count="true"></project-item>
                     </a>
                 </li>
             </ul>

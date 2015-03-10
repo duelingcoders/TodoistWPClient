@@ -1,12 +1,15 @@
 ﻿angular.module('todoist')
-.controller('ProjectListCtrl', function ($scope, $state, Project) {
+.controller('ProjectListCtrl', function ($scope, $state, Project, Storage) {
 
     function initialize() {
 
-        Project.getAllProjects()
-        .success(function (response) {
-            $scope.projects = response;
-        });
+
+        $scope.projects = Storage.get('Projects');
+
+        //Project.getAllProjects()
+        //.success(function (response) {
+        //    $scope.projects = response;
+        //});
     }
 
     initialize();

@@ -4,9 +4,16 @@
                'medium': ngModel.priority == 3,
                'high': ngModel.priority == 4
                }">
-    <i class="fa fa-check-square" ng-if="ngModel.checked == 1"></i>
-    <i class="fa fa-square" ng-if="ngModel.checked == 0"></i>
-    {{ngModel.content}}
+    <i class="fa fa-check-square item-checkbox" ng-if="ngModel.checked == 1"></i>
+    <i class="fa fa-square item-checkbox" ng-if="ngModel.checked == 0"></i>
 
-    <span class="pull-right date" ng-if="showDates">{{ngModel.date_string}}</span>
+    <div class="content">
+        {{ngModel.content}}
+    </div>
+    <div class="meta">
+        <span class="date" ng-if="showDates">{{itemDueDate}}</span>
+        <span class="project" ng-if="showProject">
+            <project-item ng-model="ngModel.project_id"></project-item>
+        </span>
+    </div>
 </a>

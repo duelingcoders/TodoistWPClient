@@ -1,19 +1,13 @@
 ﻿angular.module('todoist')
-.controller('ProjectViewCtrl', function ($scope, $state, $stateParams, Item) {
+    .controller('ProjectViewCtrl', function ($scope, $state, $stateParams, Item) {
 
-    function initialize() {
+        function initialize() {
 
-        $scope.projectName = $stateParams.projectName;
+            $scope.projectName = $stateParams.projectName;
+            $scope.items = Item.getItemsInProject($stateParams.projectId);
 
-        Item.getItemsInProject($stateParams.projectId)
-        .success(function (response) {
+        }
 
-            $scope.items = response;
+        initialize();
 
-        });
-
-    }
-
-    initialize();
-
-});
+    });

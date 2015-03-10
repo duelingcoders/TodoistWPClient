@@ -44,6 +44,11 @@ p.info {
     color: #999;
 }
 
+.grayedout {
+    color: #999;
+    font-size: 0.61em;
+}
+
 .overdue {
     color: #dd4b39;
 }

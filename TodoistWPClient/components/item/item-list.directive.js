@@ -6,7 +6,8 @@
                 ngModel: '=',
                 hasIndent: '=',
                 showDates: '=',
-                showNoTaskText: '='
+                showNoTaskText: '=',
+                showProject: '='
             },
             link: function(scope, element, attr) {},
             templateUrl: 'components/item/item-list.html'
