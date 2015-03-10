@@ -44,7 +44,7 @@
 
                 }
 
-                function toggleComplete(id) {
+                function toggleComplete($event, id) {
 
                     var completedItemsIds = [];
                     completedItemsIds.push(id);
@@ -58,9 +58,14 @@
 
                 }
 
+                function editItem() {
+                    alert('test');
+                }
+
                 initialize();
 
                 scope.toggleComplete = toggleComplete;
+                scope.editItem = editItem;
 
             },
             templateUrl: 'components/item/item.html'

@@ -1,13 +1,12 @@
-﻿<a item="item" ng-click="toggleComplete(ngModel.id)"
-   ng-class="{'completed': ngModel.checked == 1,
+﻿<a item="item" ng-class="{'completed': ngModel.checked == 1,
                'low': ngModel.priority == 2,
                'medium': ngModel.priority == 3,
                'high': ngModel.priority == 4
                }">
-    <i class="fa fa-check-square item-checkbox" ng-if="ngModel.checked == 1"></i>
-    <i class="fa fa-square item-checkbox" ng-if="ngModel.checked == 0"></i>
+    <i class="fa fa-check-square item-checkbox" ng-if="ngModel.checked == 1" ng-click="toggleComplete($event, ngModel.id)"></i>
+    <i class="fa fa-square item-checkbox" ng-if="ngModel.checked == 0" ng-click="toggleComplete($event, ngModel.id)"></i>
 
-    <div class="content">
+    <div class="content" ng-dblclick="editItem()">
         {{ngModel.content}}
     </div>
     <div class="meta">
