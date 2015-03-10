@@ -1,5 +1,5 @@
 ﻿angular.module('todoist')
-    .directive('item', function (Item, Storage, $filter) {
+    .directive('item', function (Item, Storage, $filter, $state) {
         return {
             restrict: 'E',
             scope: {
@@ -58,8 +58,8 @@
 
                 }
 
-                function editItem() {
-                    alert('test');
+                function editItem(itemId) {
+                    $state.go('edit', { itemId: itemId });
                 }
 
                 initialize();

@@ -56,10 +56,13 @@
     <Content Include="app\account\login\login.html" />
     <Content Include="app\app.css" />
     <Content Include="app\app.js" />
-    <Content Include="app\create\create.controller.js" />
-    <Content Include="app\create\create.css" />
-    <Content Include="app\create\create.html" />
-    <Content Include="app\create\create.js" />
+    <Content Include="app\item\create\create.controller.js" />
+    <Content Include="app\item\create\create.css" />
+    <Content Include="app\item\create\create.html" />
+    <Content Include="app\item\create\create.js" />
+    <Content Include="app\item\edit\edit.controller.js" />
+    <Content Include="app\item\edit\edit.html" />
+    <Content Include="app\item\edit\edit.js" />
     <Content Include="app\main\inbox\main.controller.js" />
     <Content Include="app\main\inbox\main.html" />
     <Content Include="app\main\main.controller.js" />

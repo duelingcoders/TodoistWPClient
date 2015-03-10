@@ -48,9 +48,28 @@
 
         }
 
+        function updateItem(task) {
+
+            return $http({
+                method: 'get',
+                url: 'http://api.todoist.com/API/updateItem',
+                params: {
+                    id: task.id,
+                    token: Account.getAuthToken(),
+                    project_id: task.project_id,
+                    content: task.content,
+                    date_string: task.due_date instanceof Date ? task.due_date.toISOString() : typeof task.due_date === 'string' ? task.due_date : null,
+                    priority: task.priority !== undefined ? task.priority : 1,
+                    preventCache: new Date().getTime()
+                }
+            });
+
+        }
+
         return {
             getItemsInProject: getItemsInProject,
             completeItems: completeItems,
+            updateItem: updateItem,
             addItem: addItem
         }
     });

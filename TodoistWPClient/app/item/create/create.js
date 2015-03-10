@@ -5,7 +5,7 @@ angular.module('todoist')
     $stateProvider
         .state('create', {
             url: '/create',
-            templateUrl: 'app/create/create.html',
+            templateUrl: 'app/item/create/create.html',
             controller: 'CreateCtrl'
         });
 });

@@ -6,7 +6,7 @@
     <i class="fa fa-check-square item-checkbox" ng-if="ngModel.checked == 1" ng-click="toggleComplete($event, ngModel.id)"></i>
     <i class="fa fa-square item-checkbox" ng-if="ngModel.checked == 0" ng-click="toggleComplete($event, ngModel.id)"></i>
 
-    <div class="content" ng-dblclick="editItem()">
+    <div class="content" ng-dblclick="editItem(ngModel.id)">
         {{ngModel.content}}
     </div>
     <div class="meta">
