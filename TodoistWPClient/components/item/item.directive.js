@@ -12,7 +12,7 @@
                 function initialize() {
 
                     if (scope.showDates) {
-                        scope.itemDueDate = getDateString(scope.ngModel.date_string);
+                        scope.itemDueDate = getDateString(scope.ngModel.due_date);
                     }
 
                 }

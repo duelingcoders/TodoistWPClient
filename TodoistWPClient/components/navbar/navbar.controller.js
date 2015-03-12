@@ -1,5 +1,5 @@
 ﻿angular.module('todoist')
-    .controller('NavbarCtrl', function ($scope, Account, $state) {
+    .controller('NavbarCtrl', function ($scope, $state, Account, Storage) {
 
         function initialize() {
 
@@ -8,6 +8,11 @@
             angular.element('#app-menu a:not(.coming-soon), .home-link')
             .on('click', function () {
                 $("#app-menu").collapse('hide');
+            });
+
+            var allProjects = Storage.get('Projects');
+            $scope.inboxProject = _.find(allProjects, function(project) {
+                return project.inbox_project === true;
             });
 
         }

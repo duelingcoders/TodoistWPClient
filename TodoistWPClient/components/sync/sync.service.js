@@ -10,7 +10,7 @@
                     seq_no: 0,
                     preventCache: new Date().getTime()
                 }
-            }).success(function(response) {
+            }).success(function (response) {
                 for (var key in response) {
                     if (response.hasOwnProperty(key)) {
                         Storage.set(key, response[key]);
