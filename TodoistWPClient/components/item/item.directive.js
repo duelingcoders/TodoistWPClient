@@ -39,7 +39,7 @@
                     } else if (yesterday.toISOString() === userDate.toISOString()) {
                         return 'Yesterday';
                     } else {
-                        return $filter('date')(date, 'EEE MMM d');
+                        return $filter('date')(userDate, 'EEE MMM d');
                     }
 
                 }

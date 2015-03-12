@@ -54,6 +54,14 @@
             margin-left: 40px;
         }
 
+         .item-list .item .meta span {
+             margin-left: 10px;
+         }
+
+         .item-list .item .meta span:first-of-type {
+             margin-left: 0;
+         }
+
         .item-list .item .date {
             font-size: 0.75em;
             color: #999;
